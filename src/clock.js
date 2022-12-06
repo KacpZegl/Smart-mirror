@@ -1,5 +1,3 @@
-
-
 function getTime() {
     let fullDate = new Date();
     let hours = fullDate.getHours();
@@ -19,7 +17,6 @@ function getTime() {
     document.getElementById('hour').innerHTML = hours;
     document.getElementById('minute').innerHTML = minutes;
     document.getElementById('second').innerHTML = seconds;
-    document.getElementById('current-date').innerHTML = fullDate; 
 }
 
-setInterval(getTime, 100);
+setInterval(getTime, 500);
