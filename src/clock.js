@@ -17,6 +17,8 @@ function getTime() {
     document.getElementById('hour').innerHTML = hours;
     document.getElementById('minute').innerHTML = minutes;
     document.getElementById('second').innerHTML = seconds;
-}
 
-setInterval(getTime, 500);
+    if (hours==00 && minutes == 00 && seconds==00){
+        getDays();
+    }
+}
