@@ -4,15 +4,13 @@
         <title>Digital clock </title>
     </head>
     <body>
-        <div class="main">
-             <div class="clock">
+        <div class="clock">
                 <span id="hour"></span>
                 <span id="colon">:</span>
                 <span id="minute"></span>
                 <span id="second"></span>
             </div>
-        </div>
-        <table>
+         <table>
             <th colspan="7" id="monthAndYear"></th>
             <tr class="months">   
                 <th>M</th>
@@ -78,8 +76,15 @@
                 <td id="day42"></td>
             </tr>
         </table>
+        <div class="weather"> 
+            <span id="temperature"></span>
+            <span id="weather-description"></span>
+            <img id="weather-icon"></img>
+        </div>
         <script src="clock.js" charset="utf-8"></script>
         <script src="calendar.js" charset="utf-8"></script>
+        <script src="weather.js" charset="utf-8"></script>
+        <script src="control-main.js" charset="utf-8"></script>
     </body>
 </html>
-
+ 

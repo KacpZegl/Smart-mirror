@@ -3,7 +3,7 @@ function getDaysInMonth(year, month){
 }
 
 function getDays() {
-    let fullDate = new Date();
+    var fullDate = new Date();
     let currentYear = fullDate.getFullYear();
     let currentMonth = fullDate.getMonth();
     let currentDay = fullDate.getDate();
@@ -15,10 +15,6 @@ function getDays() {
         var FirstDate = new Date(currentYear+"-"+(currentMonth+1)+"-01");
     }
     let FirstDayOfMonth = FirstDate.getDay();
-
-    console.log(FirstDate);
-    console.log(FirstDayOfMonth);
-    console.log(currentDaysInMonth);
 
     var months = ["January", "February", "March", "April", "May", "June", 
     "July", "August", "September", "October", "November", "December" ];
