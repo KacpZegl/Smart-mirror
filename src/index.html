@@ -10,7 +10,7 @@
                 <span id="minute"></span>
                 <span id="second"></span>
             </div>
-         <table>
+         <table class="table-calendar">
             <th colspan="7" id="monthAndYear"></th>
             <tr class="months">   
                 <th>M</th>
@@ -76,11 +76,52 @@
                 <td id="day42"></td>
             </tr>
         </table>
-        <div class="weather"> 
-            <span id="temperature"></span>
-            <span id="weather-description"></span>
+        <div class="weather">
             <img id="weather-icon"></img>
+            <div class="weather-now">
+                <span id="weather-temperature"></span>
+            </div>
+            <table class="table-weather">
+            <div class="forecast-time">
+                <tr>
+                    <th id="forecast0-time"></th>
+                    <th id="forecast1-time"></th> 
+                    <th id="forecast2-time"></th>
+                    <th id="forecast3-time"></th> 
+                    <th id="forecast4-time"></th>  
+                </tr>
+            </div>
+            <div class="forecast-icon">
+                <tr>
+                    <td>
+                        <img id="forecast0-icon"></img>
+                    </td>
+                    <td>
+                        <img id="forecast1-icon"></img>
+                    </td>
+                    <td>
+                        <img id="forecast2-icon"></img>
+                    </td>
+                    <td>
+                        <img id="forecast3-icon"></img>
+                    </td>
+                    <td>
+                        <img id="forecast4-icon"></img>
+                    </td>
+                </tr>
+            </div>
+            <div class="forecast-temp">
+                <tr>
+                    <td id="forecast0-temperature"></td>
+                    <td id="forecast1-temperature"></td>
+                    <td id="forecast2-temperature"></td>
+                    <td id="forecast3-temperature"></td>
+                    <td id="forecast4-temperature"></td>
+                </tr>
+            </div>
+            </table>
         </div>
+        <div class="fade"></div>
         <script src="clock.js" charset="utf-8"></script>
         <script src="calendar.js" charset="utf-8"></script>
         <script src="weather.js" charset="utf-8"></script>

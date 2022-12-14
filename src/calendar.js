@@ -45,7 +45,7 @@ function getDays() {
         }
         if (tdElem == ""){
             // document.getElementById(selectedDay).style.border = "1px solid yellow";
-            document.getElementById(selectedDayEmpty).style.opacity = "0.4";
+            document.getElementById(selectedDayEmpty).style.opacity = "0.6";
             document.getElementById(selectedDayEmpty).style.boxShadow = "0px 0px 6px 0px white";
         }
     }
