@@ -1,7 +1,7 @@
 // First, we define some variables to store the API key and the location for which we want to display the weather
 const API_KEY = '99b2e4cb92637e289cd04acd2347114c';
 const API_KEY_FORECAST = 'ccc347cdffc3cf203df315cfbec59570'
-const LOCATION = 'Gliwice, PL';
+const LOCATION = 'Gliwice, ';
 var fullDate = new Date();
 var currentHour = fullDate.getHours();
 var currentMinute = fullDate.getMinutes();
