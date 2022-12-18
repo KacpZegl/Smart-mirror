@@ -23,4 +23,3 @@ function Update() {
 }
 setInterval(Update, 1000);
 
- 
