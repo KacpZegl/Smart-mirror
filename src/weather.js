@@ -48,9 +48,6 @@ function getForecast() {
             forecastTemp = parseInt(forecastTemp, 10);
             var forecastIcon = data.list[i].weather[0].icon;
             
-            console.log(forecastTime);
-            console.log(refreshTime);
-            
             selectedForecastTemp = "forecast" + i + "-temperature";
             selectedForecastTime = "forecast" + i + "-time";
             selectedForecastIcon = "forecast" + i + "-icon";
