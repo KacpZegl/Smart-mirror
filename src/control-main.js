@@ -5,21 +5,22 @@ var fullDate = new Date();
 var forecast_time = fullDate.getHours();
 const isOnline = window.navigator.onLine;
 
-if (isOnline) {
-    console.log('Online');
-} else {
-    console.log('Offline');
-}
-
-
 getWeather_time = getWeather_time * 60 * 1000;
 getForecast_time = getForecast_time * 60 * 1000;
 
-setInterval(getTime, 500);
-getWeather();
-setInterval(getWeather, getWeather_time);
-getForecast();
-if (forecast_time == 00, forecast_time == 03)
-setInterval(getForecast, getForecast_time);
-getDays();
+function Update() {
+    
+    if (isOnline) {
+        console.log('Online');
+        getWeather();
+        setInterval(getWeather, getWeather_time);
+        getForecast();
+        setInterval(getForecast, getForecast_time);
+    } else {
+        console.log('Offline');
+    }
+    setInterval(getTime, 500);
+    getDays();
+}
+
  
