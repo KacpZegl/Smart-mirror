@@ -22,3 +22,4 @@ getForecast();
 if (forecast_time == 00, forecast_time == 03)
 setInterval(getForecast, getForecast_time);
 getDays();
+ 
