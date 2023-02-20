@@ -62,3 +62,5 @@ function getForecast() {
   // Finally, we call the getWeather function when the page loads
   //window.onload = getWeather;
   
+  //test
+  //test again
